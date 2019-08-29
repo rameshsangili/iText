@@ -34,7 +34,7 @@ public class ChangeText {
             PRStream stream = (PRStream)object;
             byte[] data = PdfReader.getStreamBytes(stream);
             String dd = new String(data);
-            dd = dd.replace("0123456789", "0121212121212"); //For replace all occurrences use replaceAll 
+            dd = dd.replace("0123456789", "0121212121212"); //to replace all occurrences use replaceAll 
             dd = dd.replace("EEE:", "Our Ref:");
             dd = dd.replace("WR", "IT TEST");
             dd = dd.replace("2016", "2020");
